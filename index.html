@@ -2,25 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <title>Vue App</title>
     </head>
     <body>
-        <!-- <script type="importmap">
-            {
-                "imports": {
-                    "vue": "vue/dist/vue.esm-bundler.js"
-                }
-            }
-        </script> -->
-        <div id="app">{{ message }}</div>
-
-        <script type="module">
-            import { createApp } from 'vue/dist/vue.esm-bundler.js'
-            import MyComponent from './src/components/my-component.js'
-
-            createApp(MyComponent).mount('#app')
-        </script>
+        <div id="app"></div>
+        <script type="module" src="/src/main.js"></script>
     </body>
 </html>
